@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.lcsd.police.view.CleanableEditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_background"
+            android:drawableLeft="@drawable/img_sousuo"
+            android:drawableRight="@drawable/img_et_delete"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:hint="请输入你要查询的内容"
+            android:textColor="@color/text_hui"
+            android:inputType="text"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/tv_search_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/whilte"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ptr_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close_either="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ListView
+            android:id="@+id/lv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/xian"
+            android:dividerHeight="0.4dp" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

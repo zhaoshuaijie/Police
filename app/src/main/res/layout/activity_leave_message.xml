@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.lcsd.police.activity.LeaveMessageActivity">
+
+    <include layout="@layout/defult_titlebar2" />
+
+    <com.lcsd.police.view.CleanableEditText
+        android:id="@+id/et_leave_message1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_background"
+        android:drawableRight="@drawable/img_et_delete"
+        android:ellipsize="end"
+        android:hint="留言标题"
+        android:inputType="text"
+        android:lines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14sp" />
+
+    <com.lcsd.police.view.CleanableEditText
+        android:id="@+id/et_leave_message2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_background"
+        android:drawableRight="@drawable/img_et_delete"
+        android:gravity="top"
+        android:hint="留言内容"
+        android:lineSpacingExtra="2dp"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_leave_message"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rl_ly_background"
+        android:gravity="center"
+        android:text="提 交"
+        android:textColor="@color/whilte"
+        android:textSize="18sp" />
+</LinearLayout>

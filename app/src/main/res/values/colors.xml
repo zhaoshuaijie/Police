@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1397e3</color>
+    <color name="colorPrimaryDark">#1397e3</color>
+    <color name="colorAccent">#1397e3</color>
+    <color name="blue_button">#1498e4</color>
+    <color name="whilte">#ffffff</color>
+    <color name="text_hui">#b8b5b5</color>
+    <color name="black">#000000</color>
+    <color name="text">#333333</color>
+    <color name="xian">#aaaaaa</color>
+    <color name="huibai">#f2f6f9</color>
+    <color name="red_dian">#e0433c</color>
+</resources>
